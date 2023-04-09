@@ -96,6 +96,20 @@ module.exports = {
     //   network_id: 2111,   // This network is yours, in the cloud.
     //   production: true    // Treats this network as if it was a public net. (default: false)
     // }
+    maticMumbai: {
+      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://rpc-mumbai.maticvigil.com/v1/${process.env.POLYGON_API_KEY}`),
+      network_id: 80001,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+    },
+    maticMainnet: {
+      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://rpc-mainnet.maticvigil.com/v1/${process.env.POLYGON_API_KEY}`),
+      network_id: 137,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+    },
   },
 
   // Set default mocha options here, use special reporters, etc.
@@ -139,3 +153,5 @@ module.exports = {
   //   }
   // }
 };
+
+const polygonApiKey = process.env.POLYGON_API_KEY;
