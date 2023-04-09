@@ -41,10 +41,10 @@
  * https://trufflesuite.com/docs/truffle/getting-started/using-the-truffle-dashboard/
  */
 
-// require('dotenv').config();
-// const { MNEMONIC, PROJECT_ID } = process.env;
+require('dotenv').config();
+const polygonApiKey = process.env.POLYGON_API_KEY;
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 module.exports = {
   /**
@@ -153,5 +153,3 @@ module.exports = {
   //   }
   // }
 };
-
-const polygonApiKey = process.env.POLYGON_API_KEY;
