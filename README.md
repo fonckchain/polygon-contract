@@ -1,6 +1,7 @@
-# Polygon Contract
-
-This repository contains Solidity smart contracts deployed on the Polygon (Matic) network.
+<p align="center">
+  <h1 align="center">Polygon Contract</h1>
+  <p align="center">This repository contains a Solidity smart contract deployed on the Polygon (Matic) network</p>
+</p>
 
 ## 📦 Installation
 
